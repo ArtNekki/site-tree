@@ -9,7 +9,7 @@ layout: default
     <label for="consulting" class="services-tree-toggle">Консалтинг</label>
     <ul class="services-tree services-tree--lvl-1">
       <li>
-        <input type="radio" name="services" id="finance">
+        <input type="radio" name="consulting" id="finance">
         <label for="finance" class="services-tree-toggle">Финансы</label>
         <ul class="services-tree services-tree--lvl-2">
           <li>
@@ -36,7 +36,7 @@ layout: default
         </ul>
       </li>
       <li>
-        <input type="radio" name="services" id="invest">
+        <input type="radio" name="consulting" id="invest">
         <label for="invest" class="services-tree-toggle">Инвестиции</label>
         <ul class="services-tree services-tree--lvl-2">
           <li>
@@ -66,7 +66,7 @@ layout: default
     <label for="audit" class="services-tree-toggle">Оценка и аудит</label>
     <ul class="services-tree services-tree--lvl-1">
       <li>
-        <input type="radio" name="services" id="expert">
+        <input type="radio" name="audit" id="expert">
         <label for="expert" class="services-tree-toggle">Оценка и экспертиза</label>
         <ul class="services-tree services-tree--lvl-2">
           <li>
@@ -117,7 +117,7 @@ layout: default
         </ul>
       </li>
       <li>
-        <input type="radio" name="services" id="audit-lvl-1">
+        <input type="radio" name="audit" id="audit-lvl-1">
         <label for="audit-lvl-1" class="services-tree-toggle">Аудит</label>
         <ul class="services-tree services-tree--lvl-2">
           <li>
@@ -161,11 +161,11 @@ layout: default
     </ul>
   </li>
   <li>
-    <input type="radio" name="services" id="entity">
-    <label for="entity" class="services-tree-toggle">Юридическая безопасность</label>
+    <input type="radio" name="services" id="legal-security">
+    <label for="legal-security" class="services-tree-toggle">Юридическая безопасность</label>
     <ul class="services-tree services-tree--lvl-1">
       <li>
-        <input type="radio" name="services" id="legal-support">
+        <input type="radio" name="legal-security" id="legal-support">
         <label for="legal-support" class="services-tree-toggle">Юридическое сопровождение</label>
         <ul class="services-tree services-tree--lvl-2">
           <li>
@@ -180,14 +180,14 @@ layout: default
         </ul>
       </li>
       <li>
-        <input type="radio" name="services" id="risks">
+        <input type="radio" name="legal-security" id="risks">
         <label for="risks" class="services-tree-toggle">Риски</label>
         <ul class="services-tree services-tree--lvl-2">
           <li>
             <a href="#" class="services-tree-link">Защита активов</a>
           </li>
           <li>
-            <input type="radio" name="services" id="elimination">
+            <input type="checkbox" name="elimination" id="elimination">
             <label for="elimination" class="services-tree-toggle">Анализ и устранение</label>
             <ul class="services-tree services-tree--lvl-3">
               <li>
@@ -210,7 +210,7 @@ layout: default
         </ul>
       </li>
       <li>
-        <input type="radio" name="services" id="bankruptcy">
+        <input type="radio" name="legal-security" id="bankruptcy">
         <label for="bankruptcy" class="services-tree-toggle">Банкротсво</label>
         <ul class="services-tree services-tree--lvl-2">
           <li>
@@ -220,7 +220,7 @@ layout: default
             <a href="#" class="services-tree-link">Выработка стратегии</a>
           </li>
           <li>
-            <input type="radio" name="services" id="advocacy">
+            <input type="checkbox" name="advocacy" id="advocacy">
             <label for="advocacy" class="services-tree-toggle">Защита интересов</label>
             <ul class="services-tree services-tree--lvl-3">
               <li>

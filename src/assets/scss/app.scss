@@ -33,3 +33,12 @@
 // @import 'components/slider';
 // @import 'components/lightbox';
 // @import 'components/dropdown';
+
+
+[class*='services-tree--lvl'] {
+  display: none;
+}
+
+input:checked ~ [class*='services-tree--lvl'] {
+  display: block;
+}
