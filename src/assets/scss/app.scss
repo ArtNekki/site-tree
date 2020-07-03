@@ -34,6 +34,9 @@
 // @import 'components/lightbox';
 // @import 'components/dropdown';
 
+input {
+  display: none;
+}
 
 [class*='services-tree--lvl'] {
   display: none;
@@ -41,4 +44,119 @@
 
 input:checked ~ [class*='services-tree--lvl'] {
   display: block;
+}
+
+.services-tree-container {
+  padding: 25px;
+}
+
+.services-tree {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.services-tree-toggle {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 15px;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #df4e4e;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.services-tree-link {
+  position: relative;
+  padding: 15px;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #4eb543;
+
+  &::before {
+    content: '\279D';
+    margin-right: 10px;
+  }
+}
+
+.services-tree--lvl-3 .services-tree-toggle {
+  background-color: lighten(#df4e4e, 20%);
+}
+
+.services-tree-toggle::before {
+  content: "\002B";
+  margin-right: 10px;
+  font-size: 30px;
+  color: #ffffff;
+  vertical-align: sub;
+}
+
+.services-tree-toggle::after,
+.services-tree-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition: transform 0.3s ease-out;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.services-tree-toggle:hover::after,
+.services-tree-link:hover::after {
+  transform: scaleY(1);
+}
+
+input:checked ~ .services-tree-toggle::after {
+  transform: scaleY(1);
+}
+
+input:checked ~ .services-tree-toggle::before {
+  content: "\2014";
+}
+
+.services-tree-lvl-0 {
+
+  li {
+    list-style-type: none;
+    margin:10px 0 10px 10px;
+    position: relative;
+
+    &:before {
+      content: "";
+      counter-increment: item;
+      position: absolute;
+      top:-10px;
+      left: -31px;
+      border-left: 1px solid #dddddd;
+      border-bottom:1px solid #dddddd;
+      width: 30px;
+      height:15px;
+    }
+
+    &:after {
+      position:absolute;
+      content:"";
+      top:5px;
+      left: -31px;
+      border-left: 1px solid #dddddd;
+      border-top:1px solid #dddddd;
+      width: 30px;
+      height:100%;
+    }
+
+    &:last-child:after {
+      display:none;
+    }
+  }
 }
