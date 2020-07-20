@@ -76,14 +76,19 @@ input:checked ~ [class*='services-tree--lvl'] {
   display: block;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: #df4e4e;
   text-decoration: none;
-  background-color: #4eb543;
+  border: 1px dotted #df4e4e;
+  //background-color: #4eb543;
 
   &::before {
     content: '\279D';
     margin-right: 10px;
   }
+}
+
+.services-tree-link:hover {
+  font-weight: 700;
 }
 
 .services-tree--lvl-3 .services-tree-toggle {
@@ -98,8 +103,7 @@ input:checked ~ [class*='services-tree--lvl'] {
   vertical-align: sub;
 }
 
-.services-tree-toggle::after,
-.services-tree-link::after {
+.services-tree-toggle::after {
   content: "";
   position: absolute;
   top: 0;
@@ -112,8 +116,7 @@ input:checked ~ [class*='services-tree--lvl'] {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.services-tree-toggle:hover::after,
-.services-tree-link:hover::after {
+.services-tree-toggle:hover::after {
   transform: scaleY(1);
 }
 
