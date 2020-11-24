@@ -7,6 +7,178 @@
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
   <style>
 
+    /*[class*='services-tree--lvl'] {*/
+    /*  display: none;*/
+    /*}*/
+
+    /*.services-tree-container {*/
+    /*  padding: 15px;*/
+    /*}*/
+
+    /*.services-tree-container input {*/
+    /*  display: none;*/
+    /*}*/
+
+    /*.services-tree-container input:checked ~ [class*='services-tree--lvl'] {*/
+    /*  display: block;*/
+    /*}*/
+
+    /*.services-tree {*/
+    /*  margin: 0;*/
+    /*  padding: 0;*/
+    /*  list-style: none;*/
+    /*}*/
+
+    /*.services-tree-toggle {*/
+    /*  position: relative;*/
+    /*  margin-bottom: 5px;*/
+    /*  padding: 15px;*/
+    /*  display: flex;*/
+    /*  align-items: center;*/
+    /*  font-size: 14px;*/
+    /*  line-height: 20px;*/
+    /*  color: #ffffff;*/
+    /*  background-color: #df4e4e;*/
+    /*  overflow: hidden;*/
+    /*  cursor: pointer;*/
+    /*}*/
+
+    /*.services-tree-link {*/
+    /*  position: relative;*/
+    /*  padding: 10px;*/
+    /*  display: flex;*/
+    /*  font-size: 12px;*/
+    /*  line-height: 16px;*/
+    /*  color: #df4e4e;*/
+    /*  text-decoration: none;*/
+    /*  border: 1px dotted #df4e4e;*/
+    /*}*/
+
+    /*.services-tree-link::before {*/
+    /*  content: '\279D';*/
+    /*  margin-right: 10px;*/
+    /*}*/
+
+    /*.services-tree-link:hover {*/
+    /*  font-weight: 700;*/
+    /*}*/
+
+    /*.services-tree-toggle::before {*/
+    /*  content: "\002B";*/
+    /*  margin-right: 10px;*/
+    /*  font-size: 30px;*/
+    /*  color: #ffffff;*/
+    /*  vertical-align: sub;*/
+    /*}*/
+
+    /*.services-tree-toggle::after {*/
+    /*  content: "";*/
+    /*  position: absolute;*/
+    /*  top: 0;*/
+    /*  left: 0;*/
+    /*  bottom: 0;*/
+    /*  right: 0;*/
+    /*  transform: scaleY(0);*/
+    /*  transform-origin: 50% 0;*/
+    /*  transition: transform 0.3s ease-out;*/
+    /*  background-color: rgba(255, 255, 255, 0.2);*/
+    /*}*/
+
+    /*.services-tree-toggle:hover::after {*/
+    /*  transform: scaleY(1);*/
+    /*}*/
+
+    /*.services-tree-container input:checked ~ .services-tree-toggle::after {*/
+    /*  transform: scaleY(1);*/
+    /*}*/
+
+    /*.services-tree-container input:checked ~ .services-tree-toggle::before {*/
+    /*  content: "\2014";*/
+    /*}*/
+
+    /*.services-tree-lvl-0  li {*/
+    /*  list-style-type: none;*/
+    /*  margin:10px 0 10px 10px;*/
+    /*  position: relative;*/
+    /*}*/
+
+    /*.services-tree-lvl-0 li::before {*/
+    /*  content: "";*/
+    /*  counter-increment: item;*/
+    /*  position: absolute;*/
+    /*  top:-10px;*/
+    /*  left: -10px;*/
+    /*  border-left: 1px solid #ffc7c7;*/
+    /*  !*border-bottom:1px solid #ffc7c7;*!*/
+    /*  width: 10px;*/
+    /*  height:15px;*/
+    /*}*/
+
+    /*.services-tree-lvl-0 li:last-child::before {*/
+    /*  border-bottom:1px solid #ffc7c7;*/
+    /*}*/
+
+    /*.services-tree-lvl-0 li::after {*/
+    /*  position:absolute;*/
+    /*  z-index: -1;*/
+    /*  content:"";*/
+    /*  top:5px;*/
+    /*  left: -10px;*/
+    /*  border-left: 1px solid #ffc7c7;*/
+    /*  border-top:1px solid #ffc7c7;*/
+    /*  width: 10px;*/
+    /*  height:100%;*/
+    /*}*/
+
+    /*.services-tree-lvl-0 li:last-child:after {*/
+    /*  display:none;*/
+    /*}*/
+
+    /*@media (min-width: 992px) {*/
+
+    /*  .services-tree-lvl-0 {*/
+    /*    display: flex;*/
+    /*    border-top: 1px solid #ffc7c7;*/
+    /*  }*/
+
+    /*  .services-tree-lvl-0 > li {*/
+    /*    width: 25%;*/
+    /*  }*/
+
+    /*  .services-tree-lvl-0 > li > label {*/
+    /*    min-height: 40px;*/
+    /*    font-size: 16px;*/
+    /*  }*/
+
+    /*  .services-tree-lvl-0 > li::before {*/
+    /*    top: -10px;*/
+    /*    left: 50%;*/
+    /*    height: 10px;*/
+    /*    !*display: none;*!*/
+    /*  }*/
+
+    /*  .services-tree-lvl-0 > li::after {*/
+    /*    display: none;*/
+    /*  }*/
+
+      /*.services-tree-container {*/
+      /*  padding: 15px;*/
+      /*}*/
+
+      /*.services-tree {*/
+      /*  margin-left: 30px;*/
+      /*}*/
+
+      /*.services-tree-lvl-0 li::before {*/
+      /*  left: -31px;*/
+      /*  width: 30px;*/
+      /*}*/
+
+      /*.services-tree-lvl-0 li::after {*/
+      /*  left: -31px;*/
+      /*  width: 30px;*/
+      /*}*/
+    }
   </style>
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');

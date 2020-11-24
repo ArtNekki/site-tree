@@ -9,3 +9,444 @@
 <script src="{{root}}assets/js/app.js"></script>
 </body>
 </html>
+
+
+
+<!--<style>-->
+<!--  [class*='services-tree&#45;&#45;lvl'] {-->
+<!--    display: none;-->
+<!--  }-->
+
+<!--  .services-tree-container {-->
+<!--    padding: 15px;-->
+<!--  }-->
+
+<!--  .services-tree-container input {-->
+<!--    display: none;-->
+<!--  }-->
+
+<!--  .services-tree-container input:checked ~ [class*='services-tree&#45;&#45;lvl'] {-->
+<!--    display: block;-->
+<!--  }-->
+
+<!--  .services-tree {-->
+<!--    margin: 0;-->
+<!--    padding: 0;-->
+<!--    list-style: none;-->
+<!--  }-->
+
+<!--  .services-tree-toggle {-->
+<!--    position: relative;-->
+<!--    margin-bottom: 5px;-->
+<!--    padding: 15px;-->
+<!--    display: flex;-->
+<!--    align-items: center;-->
+<!--    font-size: 14px;-->
+<!--    line-height: 20px;-->
+<!--    font-weight: 700;-->
+<!--    color: #ffffff;-->
+<!--    background-color: #df4e4e;-->
+<!--    overflow: hidden;-->
+<!--    cursor: pointer;-->
+<!--  }-->
+
+<!--  .services-tree-link {-->
+<!--    position: relative;-->
+<!--    padding: 10px;-->
+<!--    display: flex;-->
+<!--    font-size: 12px;-->
+<!--    line-height: 16px;-->
+<!--    color: #df4e4e;-->
+<!--    text-decoration: none;-->
+<!--    border: 1px dotted #df4e4e;-->
+<!--  }-->
+
+<!--  .services-tree-link::before {-->
+<!--    content: '\279D';-->
+<!--    margin-right: 10px;-->
+<!--  }-->
+
+<!--  .services-tree-link:hover {-->
+<!--    color: #df4e4e;-->
+<!--    font-weight: 700;-->
+<!--  }-->
+
+<!--  .services-tree-toggle::before {-->
+<!--    content: "\f067";-->
+<!--    font-family: 'FontAwesome';-->
+<!--    font-weight: 400;-->
+<!--    margin-right: 10px;-->
+<!--    font-size: 15px;-->
+<!--    line-height: 15px;-->
+<!--    color: #ffffff;-->
+<!--    vertical-align: sub;-->
+<!--  }-->
+
+<!--  .services-tree-toggle::after {-->
+<!--    content: "";-->
+<!--    position: absolute;-->
+<!--    top: 0;-->
+<!--    left: 0;-->
+<!--    bottom: 0;-->
+<!--    right: 0;-->
+<!--    transform: scaleY(0);-->
+<!--    transform-origin: 50% 0;-->
+<!--    transition: transform 0.3s ease-out;-->
+<!--    background-color: rgba(255, 255, 255, 0.2);-->
+<!--  }-->
+
+<!--  .services-tree-toggle:hover::after {-->
+<!--    transform: scaleY(1);-->
+<!--  }-->
+
+<!--  .services-tree-container input:checked ~ .services-tree-toggle::after {-->
+<!--    transform: scaleY(1);-->
+<!--  }-->
+
+<!--  .services-tree-container input:checked ~ .services-tree-toggle::before {-->
+<!--    content: "\f068";-->
+<!--  }-->
+
+<!--  .services-tree-lvl-0  li {-->
+<!--    list-style-type: none;-->
+<!--    margin: 10px 0 10px 10px;-->
+<!--    position: relative;-->
+<!--  }-->
+
+
+<!--  .services-tree-lvl-0 li::before {-->
+<!--    content: "";-->
+<!--    counter-increment: item;-->
+<!--    position: absolute;-->
+<!--    top:-10px;-->
+<!--    left: -10px;-->
+<!--    border-left: 1px solid #ffc7c7;-->
+<!--    /*border-bottom:1px solid #ffc7c7;*/-->
+<!--    width: 10px;-->
+<!--    height:15px;-->
+<!--  }-->
+
+<!--  .services-tree-lvl-0 li:last-child::before {-->
+<!--    border-bottom:1px solid #ffc7c7;-->
+<!--  }-->
+
+<!--  .services-tree-lvl-0 li::after {-->
+<!--    position:absolute;-->
+<!--    /*z-index: -1;*/-->
+<!--    content:"";-->
+<!--    top:5px;-->
+<!--    left: -10px;-->
+<!--    border-left: 1px solid #ffc7c7;-->
+<!--    border-top:1px solid #ffc7c7;-->
+<!--    width: 10px;-->
+<!--    height:100%;-->
+<!--  }-->
+
+<!--  .services-tree-lvl-0 li:last-child:after {-->
+<!--    display:none;-->
+<!--  }-->
+
+<!--  .services-tree-lvl-0 > li > label {-->
+<!--    min-height: 70px;-->
+<!--    font-size: 16px;-->
+<!--  }-->
+
+
+<!--  @media (min-width: 992px) {-->
+
+<!--    .services-tree-lvl-0 {-->
+<!--      display: flex;-->
+<!--      border-top: 1px solid #ffc7c7;-->
+<!--    }-->
+
+<!--    .services-tree-lvl-0 > li {-->
+<!--      width: 25%;-->
+<!--    }-->
+
+<!--    .services-tree-lvl-0  > li:first-child {-->
+<!--      margin-left: 0;-->
+<!--    }-->
+
+<!--    /*.services-tree-lvl-0 > li > label {*/-->
+<!--    /*  min-height: 70px;*/-->
+<!--    /*  font-size: 16px;*/-->
+<!--    /*}*/-->
+
+<!--    .services-tree-lvl-0 > li::before {-->
+<!--      top: -10px;-->
+<!--      left: 50%;-->
+<!--      height: 10px;-->
+<!--      /*display: none;*/-->
+<!--    }-->
+
+<!--    .services-tree-lvl-0 > li::after {-->
+<!--      display: none;-->
+<!--    }-->
+
+<!--    /*.services-tree-container {*/-->
+<!--    /*  padding: 15px;*/-->
+<!--    /*}*/-->
+
+<!--    /*.services-tree {*/-->
+<!--    /*  margin-left: 30px;*/-->
+<!--    /*}*/-->
+
+<!--    /*.services-tree-lvl-0 li::before {*/-->
+<!--    /*  left: -31px;*/-->
+<!--    /*  width: 30px;*/-->
+<!--    /*}*/-->
+
+<!--    /*.services-tree-lvl-0 li::after {*/-->
+<!--    /*  left: -31px;*/-->
+<!--    /*  width: 30px;*/-->
+<!--    /*}*/-->
+<!--  }-->
+<!--</style>-->
+
+<!--<div class="services-tree-container">-->
+<!--  <ul class="services-tree services-tree-lvl-0">-->
+<!--    <li>-->
+<!--      <input type="radio" name="lvl-0" id="consulting">-->
+<!--      <label for="consulting" class="services-tree-toggle">Консалтинг</label>-->
+<!--      <ul class="services-tree services-tree&#45;&#45;lvl-1">-->
+<!--        <li>-->
+<!--          <input type="checkbox" name="consulting" id="finance">-->
+<!--          <label for="finance" class="services-tree-toggle">Финансы</label>-->
+<!--          <ul class="services-tree services-tree&#45;&#45;lvl-2">-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/prodazha-pokupka-biznesa" class="services-tree-link">Продажа / покупка бизнеса</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/sdelki-sliyaniya-i-pogloshheniya-m-a" class="services-tree-link">Сделки слияния и поглощения M&A</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/razrabotka-biznes-plana" class="services-tree-link">Бизнес-план</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/finansovaya-model" class="services-tree-link">Финансовая модель</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/finansovyj-due-diligence-biznesa-i-investitsionnyh-proektov-v-moskve-abn-group" class="services-tree-link">Финансовый Due Diligence</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/bankovskie-garantii" class="services-tree-link">Банковские гарантии</a>-->
+<!--            </li>-->
+<!--            &lt;!&ndash;<li>&ndash;&gt;-->
+<!--            &lt;!&ndash;  <a href="https://abn-consult.ru/object/podgotovka-komplekta-dokumentov-dlya-podachi-zayavleniya-na-kredit" class="services-tree-link">Подготовка комплекта документов для подачи заявления на кредит</a>&ndash;&gt;-->
+<!--            &lt;!&ndash;</li>&ndash;&gt;-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <input type="checkbox" name="consulting" id="invest">-->
+<!--          <label for="invest" class="services-tree-toggle">Инвестиции</label>-->
+<!--          <ul class="services-tree services-tree&#45;&#45;lvl-2">-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/marketingovye-issledovaniya" class="services-tree-link">Маркетинговые исследования</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/" class="services-tree-link">Бизнес-план</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/" class="services-tree-link">Финансовая модель</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/tehniko-ekonomicheskoe-obosnovanie-teo" class="services-tree-link">Технико-экономическое обоснование ТЭО</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/finansovo-tehnicheskij-audit" class="services-tree-link">Финансово-технический аудит ФТА</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/privlechenie-finansirovaniya" class="services-tree-link">Привлечение финансирования</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <input type="radio" name="lvl-0" id="audit">-->
+<!--      <label for="audit" class="services-tree-toggle">Оценка и аудит</label>-->
+<!--      <ul class="services-tree services-tree&#45;&#45;lvl-1">-->
+<!--        <li>-->
+<!--          <input type="checkbox" name="audit" id="expert">-->
+<!--          <label for="expert" class="services-tree-toggle">Оценка и экспертиза</label>-->
+<!--          <ul class="services-tree services-tree&#45;&#45;lvl-2">-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/otsenka-biznesa-doli-v-ustavnom-kapitale-aktsij" class="services-tree-link">Оценка бизнеса / доли в уставном капитале / акции</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/otsenka-aktivov" class="services-tree-link">Активов</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/otsenka-nedvizhimosti" class="services-tree-link">Недвижимости</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/otsenka-dvizhimyh-obektov-oborudovaniya" class="services-tree-link">Движимых объектов (оборудования)</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/otsenka-transporta" class="services-tree-link">Транспорта (авто, водный транспорт, авиа)</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/otsenka-nematerialnyh-aktivov-otsenka-stoimosti-nma-i-is-rid" class="services-tree-link">Нематериальные активы НМА</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/" class="services-tree-link">Права требований</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/investmentt" class="services-tree-link">Инвестиционные проекты</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/retrospektivnaya-otsenka" class="services-tree-link">Ретроспективная оценка</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/sudebnaya-ekspertiza" class="services-tree-link">Судебная экспертиза</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/finansovo-ekonomicheskaya-ekspertiza" class="services-tree-link">Финансово-экономическая экспертиза</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/stroitelno-tehnicheskaya-ekspertiza" class="services-tree-link">Строительно-техническая экспертиза</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/syurvej-2" class="services-tree-link">Сюрвей</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/monitoring-zalogov" class="services-tree-link">Мониторинг залогов</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/osparivanie-kadastrovoj-stoimosti" class="services-tree-link">Оспаривание кадастровой стоимости</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <input type="checkbox" name="audit" id="audit-lvl-1">-->
+<!--          <label for="audit-lvl-1" class="services-tree-toggle">Аудит</label>-->
+<!--          <ul class="services-tree services-tree&#45;&#45;lvl-2">-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/obyazatelnyj-audit" class="services-tree-link">Обязательный</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/nalogovyj-audit" class="services-tree-link">Налоговый</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/ekspress-audit" class="services-tree-link">Экспресс аудит</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/otsenka-aktivov-dlya-msfo-v-moskve-abn-group" class="services-tree-link">Аудит по МСФО</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/konsolidatsiya-otchetnosti" class="services-tree-link">Консалидация отчетности</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/audit-upravlencheskogo-ucheta" class="services-tree-link">Аудит управленческого учета</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <input type="checkbox" name="services" id="automatization">-->
+<!--      <label for="automatization" class="services-tree-toggle">Автоматизация</label>-->
+<!--      <ul class="services-tree services-tree&#45;&#45;lvl-1">-->
+<!--        <li>-->
+<!--          <a href="https://abn-consult.ru/object/erp" class="services-tree-link">ERP</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <a href="https://abn-consult.ru/object/skoringovyj-analiz-stoimosti-sas" class="services-tree-link">САС</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <a href="https://abn-consult.ru/object/legko-otsenka-lo" class="services-tree-link">ЛО</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <a href="https://abn-consult.ru/object/fond" class="services-tree-link">Fond</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <input type="checkbox" name="services" id="legal-security">-->
+<!--      <label for="legal-security" class="services-tree-toggle">Юридическая безопасность</label>-->
+<!--      <ul class="services-tree services-tree&#45;&#45;lvl-1">-->
+<!--        <li>-->
+<!--          <input type="checkbox" name="legal-security" id="legal-support">-->
+<!--          <label for="legal-support" class="services-tree-toggle">Юридическое сопровождение</label>-->
+<!--          <ul class="services-tree services-tree&#45;&#45;lvl-2">-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/zashhita-interesov" class="services-tree-link">Защита интересов</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/predstavitelstvo-v-sude" class="services-tree-link">Представительство в суде</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/vyrabotka-strategii-v-sude" class="services-tree-link">Выработка стратегии</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/vzyskanie-debitorskoj-zadolzhennosti" class="services-tree-link">Взыскание дебеторской задолженности</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/osparivanie-sdelok" class="services-tree-link">Оспаривание сделок</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <input type="checkbox" name="legal-security" id="risks">-->
+<!--          <label for="risks" class="services-tree-toggle">Риски</label>-->
+<!--          <ul class="services-tree services-tree&#45;&#45;lvl-2">-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/zashhita-aktivov" class="services-tree-link">Защита активов</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <input type="checkbox" name="elimination" id="elimination">-->
+<!--              <label for="elimination" class="services-tree-toggle">Анализ и устранение</label>-->
+<!--              <ul class="services-tree services-tree&#45;&#45;lvl-3">-->
+<!--                <li>-->
+<!--                  <a href="https://abn-consult.ru/object/imushhestvennye-riski" class="services-tree-link">Имущественные риски</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  <a href="https://abn-consult.ru/object/finansovie-riski" class="services-tree-link">Финансовые риски</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  <a href="https://abn-consult.ru/object/nalogovye-riski" class="services-tree-link">Налоговые риски</a>-->
+<!--                </li>-->
+<!--              </ul>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/due-diligence" class="services-tree-link">Due dillidgance</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/pravovoe-konsultirovanie" class="services-tree-link">Правовое консультирование</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <input type="checkbox" name="legal-security" id="bankruptcy">-->
+<!--          <label for="bankruptcy" class="services-tree-toggle">Банкротсво</label>-->
+<!--          <ul class="services-tree services-tree&#45;&#45;lvl-2">-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/zashhita-ot-bankrotstva" class="services-tree-link">Защита от банкротства</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/vyrabotka-strategii-bankrotstvo" class="services-tree-link">Выработка стратегии</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <input type="checkbox" name="advocacy" id="advocacy">-->
+<!--              <label for="advocacy" class="services-tree-toggle">Защита интересов</label>-->
+<!--              <ul class="services-tree services-tree&#45;&#45;lvl-3">-->
+<!--                <li>-->
+<!--                  <a href="https://abn-consult.ru/object/bankrotstvo-kreditora" class="services-tree-link">Кредитора</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  <a href="https://abn-consult.ru/object/bankrotstvo-dolzhnika" class="services-tree-link">Должника</a>-->
+<!--                </li>-->
+<!--              </ul>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/arbitrazhnoe-upravlenie" class="services-tree-link">Арбитражное управление</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://abn-consult.ru/object/" class="services-tree-link">Представление интересов в суде</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div>-->
